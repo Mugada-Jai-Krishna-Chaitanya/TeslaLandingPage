@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Montserrat",sans-serif;
+}
+
+.nav{
+    @apply flex items-center justify-between fixed w-full top-0 z-10 h-[5.4rem] p-[3.2rem];
+}
+
+.nav_link{
+    @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-500 rounded-lg;
+}
+
+.car_section{
+    @apply w-full h-screen relative;
+}
+
+.car_img{
+    @apply w-full h-full object-cover;
+}
+
+.car_details{
+    @apply absolute top-[20%] left-[50%] text-center;
+}
+.transform_50{
+    transform: translate(-50%, -50%);
+}
+.model_name{
+    @apply text-[4rem] font-semibold text-[#393c41];
+}
+.Tagline{
+    @apply text-2xl text-[#4c4d51];
+}
+.car_buttons{
+    @apply absolute top-[85%] left-[50%] flex flex-col lg:flex-row;
+}
+.btn{
+    @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[3.2rem] w-[25.5rem] h-16 bg-opacity-80
+}
+.invertory{
+    @apply text-[#393c41] bg-white bg-opacity-60 ml-8;
+}
+.down_svg{
+    @apply block w-full h-20 mx-auto absolute top-[93%] animate-bounce
+}
